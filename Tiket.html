@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Pantai Kyoko</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Tiket.css">
+</head>
+<body>
+    
+    <!-- LAYAR LOADING -->
+    <div id="loading-screen" class="loading-overlay hidden-completely">
+        <div class="loading-content">
+            <div class="icon-animasi">🎫</div>
+            <h2>Menyiapkan Data Pesanan...</h2>
+            <div class="bar-container">
+                <div class="bar-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="header">
+            <h1>🌴 Pantai Kyoko</h1>
+            <p class="tagline">"Pesan Cepat & Kirim Bukti via WhatsApp"</p>
+        </div>
+
+        <div id="booking-section">
+            <div class="input-box">
+                <label>Nama Traveler</label>
+                <input type="text" id="nama" placeholder="Nama Lengkap">
+            </div>
+            <div class="input-row">
+                <div class="input-box">
+                    <label>Jumlah Tiket</label>
+                    <input type="number" id="jumlah" min="1" value="1">
+                </div>
+                <div class="input-box">
+                    <label>Tanggal</label>
+                    <input type="date" id="tanggal">
+                </div>
+            </div>
+            <button class="btn-primary" onclick="mulaiPemesanan()">Lanjut ke Pembayaran</button>
+        </div>
+
+        <div id="result-area" class="hidden"></div>
+    </div>
+    
+    <script src="Tiket.js"></script>
+</body>
+</html>
